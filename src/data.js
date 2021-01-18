@@ -191,6 +191,15 @@ function chillHop() {
             color: ["#4CD0FC","#EE4956"],
             active: false,
             id : uuidv4()
+        },
+        {
+            name: "Vaseegra",
+            artist: "Lost Stories",
+            audio: "https://raw.githubusercontent.com/Rudrava/peacePlayer/main/musicFolder/vaseegra.mp3",
+            cover: "https://raw.githubusercontent.com/Rudrava/peacePlayer/main/musicFolder/vaseegra.webp",
+            color: ["#D73D30","#B1A8AD"],
+            active: false,
+            id : uuidv4()
         }
     ];
 }
