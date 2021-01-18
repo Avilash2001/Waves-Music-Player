@@ -9,11 +9,19 @@ import Nav from './components/Nav';
 //Import Util
 import data from './data';
 
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
 function App() {
   //Ref
   const audioRef = useRef(null);
   //State
-  const [songs,setSongs] =  useState(data());
+  const [songs,setSongs] =  useState(shuffleArray(data()));
   const [currentSong,setCurrentSong] = useState(songs[0]);
   const [isPlaying,setIsPlaying] = useState(false);
   const [songInfo,setSongInfo] = useState({
